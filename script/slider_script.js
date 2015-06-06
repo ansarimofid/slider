@@ -23,7 +23,7 @@ function change_image_next() { //function to change Image to next Image.
     var slider_thumbnail;
     img_countp();
     slider_thumbnail = document.getElementById("slider_thumbnail");
-    slider_thumbnail.setAttribute("src", "_slider_images/image_" + c + ".jpg");
+    slider_thumbnail.setAttribute("src", "slider_images/image_" + c + ".jpg");
 }
 
 function change_image_prev() { //function to change Image to Previous Image.
@@ -31,5 +31,5 @@ function change_image_prev() { //function to change Image to Previous Image.
     var thumbnail;
     img_countn();
     thumbnail = document.getElementById("slider_thumbnail");
-    thumbnail.setAttribute("src", "_slider_images/image_" + c + ".jpg");
+    thumbnail.setAttribute("src", "slider_images/image_" + c + ".jpg");
 }
