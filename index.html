@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Image Slider</title>
+        <link href="_css/slider_stylesheet.css" type="text/css" rel="stylesheet">
+        <script src="_script/slider_script.js"></script>
+    </head>
+    
+    <body onload="change_image_next();setInterval('change_image_next()',3000)">
+    <!--
+        This is simple image slider created in the process of learning javascript
+        
+        You can add this slider to you site
+            Copy code of div slider_container,slider_stylesheet,slider_script and _slider_images folder.
+        You can show whatever number of image you want in the slider.
+            1.Add your image in folder "_slider_images/".
+            2.Naming convention for image is "image_indexValue" where indexValue can be from 0 to numberOfImages-1. 
+                eg: image_0,image_2
+            3.change the value of modVal in script.js to numberOfImages
+        
+        For styling information check comments in slider_stylesheet.css
+    -->
+         <div id="slider_container"> 
+          <!--Main  Container containing whole canvas-->
+          <div id="slider_heading">Image Slider</div>
+                   
+            <div id="slider_slides">  
+             <!--Consist of Slides and Button-->
+              <img id="slider_thumbnail" src="_slider_images/image_0.jpg" alt="This is The Place For Large Thumbnail" >
+              <!-- Large Thumbnail -->
+              
+              <button id="slider_change_img_prev" class="slider_button_ico" onclick="change_image_prev()">&#60;</button>
+              <!-- Go to Previous Image Button -->
+              <button id="slider_change_img_next" class="slider_button_ico" onclick="change_image_next()">&#62;</button>
+              <!-- Go to Next Button -->              
+           </div>
+        </div>
+    </body>
+</html>
