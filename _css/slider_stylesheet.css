@@ -36,8 +36,8 @@ body {
     box-shadow: 0 0 50px 5px aqua;
     position: relative;
     height: 400px;
+    width: 600px;
     overflow: hidden;
-    width: 700px;
     margin: 20px;
 }
 
@@ -71,4 +71,9 @@ body {
     padding-bottom: 20px;
     padding-top: 25px;
     font-family:fantasy;
+}
+
+#foot {
+    color: floralwhite;
+    margin-top: 50px;
 }
